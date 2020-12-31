@@ -1,0 +1,125 @@
+<!-- 优惠券 -->
+<template>
+  <div class='app-container'>
+    <van-nav-bar
+      left-arrow
+      title="优惠券"
+      @click-left="onClickLeft"
+      style="box-shadow: 0 3px 10px rgba(127, 127, 127, 0.06);"
+    >
+      <template #left>
+        <van-icon name="arrow-left" color="#000000"/>
+      </template>
+      <template #right>
+        <van-icon name="ellipsis" color="#000000"/>&nbsp;
+        <van-icon name="browsing-history-o"  color="#000000"/>
+      </template>
+    </van-nav-bar>
+    <div class="app-body">
+      <div class="app-card" v-for="item in 4" :key="item">
+        <div class="card-left">
+          <div style="display: flex;align-items: flex-start">
+            ￥<span style="font-size: 56px;font-weight: bold;">10</span>
+          </div>
+          <div style="font-size: 12px">
+            满200减10
+          </div>
+        </div>
+        <div class="card-center">
+          <div style="font-size: 18px">
+            优惠券
+          </div>
+          <div style="color: #BBBBBB;font-size: 14px">
+            2020.9.6·2020.11.11
+          </div>
+        </div>
+        <div class="card-right">
+          <div style="color: #F75441;font-size: 14px;width: 14px">
+            去使用
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+// 这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
+// 例如：import 《组件名称》 from '《组件路径》';
+
+export default {
+// import引入的组件需要注入到对象中才能使用
+  name: 'discountCoupon',
+  components: {},
+  data () {
+    // 这里存放数据
+    return {}
+  },
+  // 监听属性 类似于data概念
+  computed: {},
+  // 监控data中的数据变化
+  watch: {},
+  // 方法集合
+  methods: {
+    onClickLeft () {
+      this.$router.go(-1)
+    }
+  },
+  // 生命周期 - 创建完成（可以访问当前this实例）
+  created () {
+
+  },
+  // 生命周期 - 挂载完成（可以访问DOM元素）
+  mounted () {
+
+  },
+  beforeCreate () {
+  }, // 生命周期 - 创建之前
+  beforeMount () {
+  }, // 生命周期 - 挂载之前
+  beforeUpdate () {
+  }, // 生命周期 - 更新之前
+  updated () {
+  }, // 生命周期 - 更新之后
+  beforeDestroy () {
+  }, // 生命周期 - 销毁之前
+  destroyed () {
+  }, // 生命周期 - 销毁完成
+  activated () {
+  } // 如果页面有keep-alive缓存功能，这个函数会触发
+}
+</script>
+// @import url(); 引入公共css类
+<style lang="scss" scoped>
+.app-container{
+  .app-body{
+    .app-card{
+      height: 88px;
+      margin: 10px;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      border-radius: 8px;
+      .card-left{
+        width: 131px;
+        @extend %flex-center;
+        flex-direction: column;
+        background: #FE694C;
+        color: #FFFFFF;
+      }
+      .card-center{
+        width: 162px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+      }
+      .card-right{
+        width: 64px;
+        border-left: 1px dashed  #F75441;
+        @extend %flex-center
+      }
+    }
+  }
+}
+</style>

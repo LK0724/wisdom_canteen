@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14.667" viewBox="0 0 12 14.667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe694c;
+      }
+    </style>
+  </defs>
+  <g id="组_69" data-name="组 69" transform="translate(0)">
+    <path id="优惠券" d="M14.667,7.333v4A.667.667,0,0,1,14,12H.667A.667.667,0,0,1,0,11.333v-4A1.333,1.333,0,0,0,1.333,6,1.333,1.333,0,0,0,0,4.667v-4A.667.667,0,0,1,.667,0H14a.667.667,0,0,1,.667.667v4a1.333,1.333,0,1,0,0,2.667ZM13.333,8a2.167,2.167,0,0,1,0-4V1.333h-12V4a2.167,2.167,0,0,1,0,4v2.667h12V8Z" transform="translate(12 0) rotate(90)"/>
+    <path id="优惠券-2" data-name="优惠券" class="cls-1" d="M0,0H1.134V4.536H0Z" transform="translate(8.268 8.309) rotate(90)"/>
+    <path id="优惠券-3" data-name="优惠券" class="cls-1" d="M0,0H1.134V4.536H0Z" transform="translate(8.268 4.984) rotate(90)"/>
+  </g>
+</svg>
